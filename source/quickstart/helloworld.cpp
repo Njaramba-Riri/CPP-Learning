@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // preprocessor directive.
 #include <vector>
 #include <string>
 
@@ -13,5 +13,8 @@ int main()
         cout << word << " ";
     }
     cout << endl;
+
+    std::cout << "Hello world!";
+    return 0;
 
 }
