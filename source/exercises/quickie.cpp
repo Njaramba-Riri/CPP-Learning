@@ -21,7 +21,7 @@ int main()
     std::cout <<  "This does the same as #ifndef but uses a more C++-style syntax. \n";
 #endif
 
-#if 1
+#if 1 //Always true so the code block will always execute. 
     int x{};
     std::cout << "Enter any number: ";
     std::cin >> x;
