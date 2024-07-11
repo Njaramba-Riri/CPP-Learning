@@ -4,10 +4,10 @@ using namespace std;
 
 class Student{
     public:
-        string name;
-        string major;
-        char grade;
-        double gpa;
+        string name{};
+        string major{};
+        char grade{};
+        double gpa{};
         
         Student(string jina, string Amajor, char Agrade, double score){ //Constructor.
             name = jina;
@@ -28,8 +28,8 @@ class Student{
 
 int main()
 {
-    Student Tom("Tom", "Computer Science", 'A', 3.4);
-    cout << Tom.hasHonors() << endl;
+    Student Tom("Tom", " Computer Science ", 'A', 3.4);
+    cout << Tom.name << Tom.major << Tom.hasHonors() << endl;
     Student Mike("Michael", "Journalism", 'B', 3.9);
     cout << Mike.hasHonors() << endl;
 

@@ -36,20 +36,15 @@ void playGame()
     int maxNumber{};
     switch (difficulty)
     {
-    case 1: maxNumber = 10;
-        break;
-    case 2: maxNumber = 50;
-        break;
-    case 3: maxNumber = 100;
-        break;
-    default:
-        maxNumber = 50;
-        break;
+    case 1:  maxNumber = 10;  break;
+    case 2:  maxNumber = 50;  break;
+    case 3:  maxNumber = 100; break;
+    default: maxNumber = 50;  break;
     }
 
     int secretNumber = rand() % maxNumber;
     int guess{};
-    int guessCount{ 0 };
+    int guessCount{0};
     setColor(36);
     std::cout << "Guess a number between 0 and " << maxNumber << ".\n\n";
     setColor(39);
@@ -142,7 +137,7 @@ int main()
     char whichGame;
 
     do{
-        std::cout << "Which game do you want to play?: ";
+        std::cout << "Which game do you want to play? (r/g): ";
         std::cin >> whichGame;
         if (whichGame == 'R' || whichGame == 'r')
         {
