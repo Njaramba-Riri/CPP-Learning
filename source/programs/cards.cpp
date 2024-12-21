@@ -45,9 +45,9 @@ int main(){
     }
 
     if (chosen.number == prize.number && chosen.suit == prize.suit){
-        cout << "That's damn right!. You win.\n";
+        cout << "That's damn right! You win.\n";
     }else{
-        cout << "Ala!, kwani haukuwa keen kwa darasa?.\n";
+        cout << "Ala? kwani haukuwa keen kwa darasa?.\n";
     }
 
     return 0;
